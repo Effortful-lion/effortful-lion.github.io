@@ -1,4 +1,4 @@
-# Hugo + Github Pages构建书站
+# Hugo + Github Pages 构建书站
 
 ## 准备仓库
 
