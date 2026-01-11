@@ -1,5 +1,5 @@
 ---
-title: "Actor"
+title: "简单Actor系统设计"
 date: 2026-01-11T12:44:36+08:00
 # bookComments: false
 # bookSearchExclude: false

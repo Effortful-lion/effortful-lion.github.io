@@ -35,18 +35,18 @@ enableGitInfo = true
 # 【核心】仅定义一级分类菜单，二级分类由目录自动生成（无需手动写）
 [[menu.home]]
   name = "GO"
-  pageRef = "/docs/go/"        # 对应 content.zh/docs/go/
+  pageRef = "/docs/go笔记/"
   weight = 1
-  pre = "<i class='fas fa-code'></i>"  # 可选：添加图标（需引入font-awesome）
+  # pre = "<i class='fas fa-code'></i>"  # 可选：添加图标（需引入font-awesome）
 
 [[menu.home]]
   name = "游戏开发"
-  pageRef = "/docs/game/"
+  pageRef = "/docs/游戏开发/"
   weight = 2
 
 [[menu.home]]
   name = "数据库"
-  pageRef = "/docs/database/"
+  pageRef = "/docs/数据库/"
   weight = 3
 
 [[menu.home]]
@@ -56,12 +56,12 @@ enableGitInfo = true
 
 [[menu.home]]
   name = "搜索引擎"
-  pageRef = "/docs/search/"
+  pageRef = "/docs/搜索引擎/"
   weight = 5
 
 [[menu.home]]
-  name = "其他开源"
-  pageRef = "/docs/other-open-source/"
+  name = "杂记"
+  pageRef = "/docs/杂记/"
   weight = 6
 
 # ===================== Book 主题自定义参数 =====================

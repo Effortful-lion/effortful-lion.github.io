@@ -1,5 +1,5 @@
 ---
-title: "Game"
+title: "杂记"
 weight: 1
 # bookFlatSection: false
 # bookToc: true
