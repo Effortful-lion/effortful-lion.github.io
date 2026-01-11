@@ -1,0 +1,9 @@
+baseURL = 'https://effortful-lion.github.io/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "ananke"
+
+[taxonomies]
+  tag = "tags"
+  series = "series"
+  category = "categories"
