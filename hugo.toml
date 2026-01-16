@@ -1,6 +1,7 @@
 # ===================== 核心基础配置 =====================
 baseURL = 'https://effortful-lion.github.io/'
-languageCode = 'en-us'
+languageCode = 'zh-CN'  # 改为中文（匹配你的多语言配置）
+defaultContentLanguage = "zh"  # 关键：显式指定默认语言为zh（和[languages.zh]匹配）
 title = 'Lion Blog'
 theme = "hugo-book"
 # 所有文章图片的根路径
