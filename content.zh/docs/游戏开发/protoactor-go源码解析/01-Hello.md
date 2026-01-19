@@ -17,7 +17,7 @@ weight: 1
 ![img.png](/assets/img.png)
 
 ## actor注册
-![](/assets/01-hello-1768532836010.png)
+![](static/assets/01-hello-1768532836010.png)
 
 ## RequestId 作用 和 Process作用
 ![img_1.png](/assets/img_1.png)

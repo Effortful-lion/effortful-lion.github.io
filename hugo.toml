@@ -5,7 +5,7 @@ defaultContentLanguage = "zh"  # 关键：显式指定默认语言为zh（和[la
 title = 'Lion Blog'
 theme = "hugo-book"
 # 所有文章图片的根路径
-imageRoot = "/assets/"
+imageRoot = "/static/assets/"
 # 所有文章默认封面图
 # defaultCover = "/images/default-cover.jpg"
 
