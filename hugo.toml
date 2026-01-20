@@ -24,6 +24,9 @@ enableGitInfo = true
     startLevel = 1
   [markup.highlight]
     style = "base16-snazzy"
+  [markup.tableOfContents]
+    startLevel = 2  # 目录起始层级（按需调整）
+    endLevel = 4
 
 # ===================== 多语言配置 =====================
 [languages]
@@ -89,4 +92,4 @@ enableGitInfo = true
   BookServiceWorker = "precache"
   BookTranslatedOnly = false
 
-  bookToC = false
+  BookToc = true
