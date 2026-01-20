@@ -88,3 +88,5 @@ enableGitInfo = true
   BookPortableLinks = 'warning'
   BookServiceWorker = "precache"
   BookTranslatedOnly = false
+
+  bookToC = false
