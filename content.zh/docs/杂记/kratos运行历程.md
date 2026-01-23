@@ -13,6 +13,10 @@ weight: 1
 
 # Kratos运行历程
 
+## 调用和开发顺序
+
+![](/assets/kratos运行历程-1769083033433.png)
+
 ## 初始化 kratos 工程
 ```shell
 kratos new demo1
