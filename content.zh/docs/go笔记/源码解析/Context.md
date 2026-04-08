@@ -126,8 +126,7 @@ func worker(ctx context.Context, name string) {
              ↓ 关闭孙 done channel
 ```
 
-**问题：**
-0. context的设计原理
+### 0. context的设计原理
 ```text
 设计原理核心三点：
 1. 树形传播
@@ -138,7 +137,7 @@ func worker(ctx context.Context, name string) {
 取消、超时、传值分别由不同实现类负责，通过组合而非继承扩展，结构轻量、高效、无侵入。
 ```
 
-1. cancel工作原理
+### 1. cancel工作原理
 ```text
 一句话：context 利用 Channel + Select 调度，让 Goroutine 主动监听 ctx.Done() 信号。一旦 close(done)，Goroutine 收到信号就自动退出，从而实现安全、优雅地停止 Goroutine。
 eg：
@@ -154,7 +153,7 @@ default:
 直接退出goroutine
 ```
 
-2. context传递原理
+### 2. context传递原理
 ```text
 对应的context传递原理是：父context中维护子context的map（子context会注册到父context的map中），递归关闭的本质实际上就是父context遍历map然后依次调用cancel()
 那么对应的效果是：
@@ -162,7 +161,7 @@ default:
 父context才退出（这是一个栈式的结果）
 ```
 
-3. context定时原理
+### 3. context定时原理
 ```text
 context 定时原理的本质是：内部通过 time.AfterFunc () 函数（实际上是创建了一个timer），设置过期时间和 cancel 回调函数。当时间到达时，自动回调 cancel () 实现取消。
 定时器的实现原理就是通过 Go 运行时维护的最小堆（timer heap）统一管理所有 Timer，不需要为每个定时任务创建单独的 goroutine 等待；
